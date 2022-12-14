@@ -1,0 +1,57 @@
+{
+  "type": "object",
+  "properties": {
+    "fullname": {
+      "type": "string",
+      "minLength": 5,
+      "maxLength": 100,
+      "description": "Please enter your name."
+    },
+    "address": {
+      "type": "string",
+      "minLength": 5,
+      "maxLength": 200,
+      "description": "Please enter your address."
+    },
+    "gender": {
+      "type": "string",
+      "enum": [
+        "Male",
+        "Female"
+      ],
+      "description": "Select Gender."
+    },
+    "age": {
+      "type": "number",
+      "minimum": 18,
+      "maximum": 120,
+      "default": 18,
+      "multipleOf": 1,
+      "description": "Please enter your age."
+    },
+    "contact": {
+      "type": "string",
+      "minLength": 5,
+      "maxLength": 15,
+      "description": "Please enter your contact number."
+    },
+    "bdate": {
+      "type": "string",
+      "format": "date",
+      "description": "Please enter your birth date."
+    },
+    "username": {
+      "type": "string",
+      "minLength": 5,
+      "maxLength": 100,
+      "description": "Please enter your username."
+    },
+    "password": {
+      "type": "string",
+      "minLength": 5,
+      "maxLength": 100,
+      "description": "Please enter your password."
+    }
+  },
+  "required": ["fullname", "username", "password"]
+}

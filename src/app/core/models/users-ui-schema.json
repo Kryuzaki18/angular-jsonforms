@@ -1,0 +1,69 @@
+{
+  "type": "VerticalLayout",
+  "elements": [
+    {
+      "type": "Control",
+      "scope": "#/properties/fullname",
+      "label": "Name"
+    },
+    {
+      "type": "Control",
+      "scope": "#/properties/address",
+      "label": "Address"
+    },
+    {
+      "type": "HorizontalLayout",
+      "elements": [
+        {
+          "type": "Control",
+          "scope": "#/properties/gender",
+          "label": "Gender"
+        },
+        {
+          "type": "Control",
+          "scope": "#/properties/age",
+          "label": "Age"
+        },
+        {
+          "type": "Control",
+          "scope": "#/properties/contact",
+          "label": "Contact Number"
+        },
+        {
+          "type": "Control",
+          "scope": "#/properties/bdate",
+          "label": "Birth Date"
+        }
+      ]
+    },
+    {
+      "type": "HorizontalLayout",
+      "elements": [
+        {
+          "type": "Control",
+          "scope": "#/properties/username",
+          "label": "Username",
+          "rule": {
+            "effect": "DISABLE",
+            "condition": {
+              "scope": "#",
+              "schema": {}
+            }
+          }
+        },
+        {
+          "type": "Control",
+          "scope": "#/properties/password",
+          "label": "Password",
+          "rule": {
+            "effect": "DISABLE",
+            "condition": {
+              "scope": "#",
+              "schema": {}
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
